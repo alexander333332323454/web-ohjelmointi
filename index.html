@@ -6,6 +6,34 @@
 <div style="border: 3px solid green;">5435343</div>
 <p>My first paragraph.</p>
 <div style="border: 1px solid black">Hello World</div>
+<button command="show-modal" commandfor="myDialog">Danger</button>
 
+<dialog id="myDialog">
+    <h2>Huomio</h2>
+    <p>Tämä on mahdollisesti vaarallinen toiminto!</p>
+    <button commandfor="myDialog" command="close">Peruuta</button>
+    <button onclick="alert('omg ur ded')">Jatka</button>
+    <details>
+    <summary>Otsikko</summary>
+    <p>Piilossa olevaa tietoa</p>
+    <details>
+    <summary>Otsikko</summary>
+    <p>Itsenäinen haitari</p>
+</details>
+
+<details name="accordion1">
+    <summary>Asia 1</summary>
+    <p>Näistä kolmesta</p>
+</details>
+<details name="accordion1">
+    <summary>Asia 2</summary>
+    <p>Vain yksi</p>
+</details>
+<details name="accordion1">
+    <summary>Asia 3</summary>
+    <p>Voi olla auki kerrallaan</p>
+</details>
+</details>
+</dialog>
 </body>
 </html>

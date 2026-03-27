@@ -67,32 +67,40 @@
 </nav>
 
 <h1>Keskustelu</h1>
+<button onclick="document.getElementById('dialogi').showModal()">
+  Kommentoi
+</button>
 
-<form>
-  <h2>Jätä kommentti</h2>
+<dialog id="dialogi">
+  <form method="dialog">
+    <h2>Jätä kommentti</h2>
 
-  <label for="message">Viesti</label>
-  <textarea id="message" name="message"></textarea>
+    <label for="message">Viesti</label>
+    <textarea id="message" name="message"></textarea>
 
-  <label for="email">Sähköposti</label>
-  <input type="email" id="email" name="email">
+    <label for="email">Sähköposti</label>
+    <input type="email" id="email" name="email">
 
-  <label for="birthday">Syntymäpäivä</label>
-  <input type="date" id="birthday" name="birthday">
+    <label for="birthday">Syntymäpäivä</label>
+    <input type="date" id="birthday" name="birthday">
 
-  <label for="type">Viestin tyyppi</label>
-  <select id="type" name="type">
-    <option value="question">Kysymys</option>
-    <option value="comment">Kommentti</option>
-  </select>
+    <label for="type">Viestin tyyppi</label>
+    <select id="type" name="type">
+      <option value="question">Kysymys</option>
+      <option value="comment">Kommentti</option>
+    </select>
 
-  <div class="checkbox-group">
-    <input type="checkbox" id="consent" name="consent">
-    <label for="consent">Annan luvan tietojen käyttöön markkinoinnissa</label>
-  </div>
+    <div class="checkbox-group">
+      <input type="checkbox" id="consent" name="consent">
+      <label for="consent">Annan luvan tietojen käyttöön markkinoinnissa</label>
+    </div>
 
-  <button type="submit">Lähetä</button>
-</form>
+    <button type="submit">Lähetä</button>
+    <button type="button" onclick="document.getElementById('dialogi').close()">
+      Sulje
+    </button>
+  </form>
+</dialog>
 
 <section>
   <h2>Aiemmat kommentit</h2>
@@ -116,7 +124,7 @@
   </article>
 
   <article>
-    <p>viesi</p>
+    <p>viesti</p>
     <time datetime="2026-03-17T09:20">17.3.2026 klo 09:20</time><br>
     <small>213123@email.com</small>
   </article>
