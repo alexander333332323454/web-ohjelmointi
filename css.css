@@ -35,10 +35,52 @@ p {
 }
 
 
+a {
+    color: #000000;
+}
+
+
+a:hover {
+  color: #ff0000;
+}
+
+
+a:visited {
+  color: #888888;
+}
+
+
+button {
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+
+button:hover {
+  background-color: #ff0000;
+}
+
+
 section {
     background-color: #ffffff;
     border: 1px solid #ccc;
     padding: 16px;
     margin-bottom: 20px;
     border-radius: 6px;
+}
+
+
+input:focus,
+textarea:focus,
+select:focus {
+  background-color: #fff9c4;
+  outline: none;
+}
+
+ul li:last-child,
+ol li:last-child {
+  font-style: italic;
 }
