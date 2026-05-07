@@ -84,3 +84,20 @@ ul li:last-child,
 ol li:last-child {
   font-style: italic;
 }
+
+@font-face {
+  font-family: "HeadingFont";
+  src: url("fonts/Roboto/static/Roboto-Black.ttf");
+}
+@font-face {
+  font-family: "BodyFont";
+  src: url("fonts/Roboto/static/Roboto_Condensed-Regular.ttf");
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "HeadingFont";
+}
+
+body {
+  font-family: "BodyFont";
+}
